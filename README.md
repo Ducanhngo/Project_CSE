@@ -20,17 +20,21 @@
 * **Step 5**: Initialize the model
 ```
 from ultralytics import YOLOv10
-MODEL_PATH = ’yolov10n.pt ’
+MODEL_PATH = 'yolov10n.pt'
 model = YOLOv10(MODEL_PATH)
 ```
 * **Step 6**: Download/ Upload example images to Colab
 
+![image](https://github.com/Ducanhngo/Project_YOLOv10_Worksafety/assets/104834316/e1a1ba62-81d3-4be3-b0a2-edd230d24aca)
+
 * **Step 7**: Predict and save results
+
 ```
-IMG_PATH = ’./images/HCMC_Street.jpg’
+IMG_PATH = './images/HCMC_Street.jpg'
 result = model(source = IMG_PATH)[0]
-result.save(’./images/HCMC_Street_predict.png’)
+result.save('./images/HCMC_Street_predict.png')
 ```
 
+![image](https://github.com/Ducanhngo/Project_YOLOv10_Worksafety/assets/104834316/fdaf5983-24c5-410d-af7b-ff5c4fd79d7e)
 
  
